@@ -1,6 +1,6 @@
-import {Meta} from '@/layouts/Meta';
-import {Main} from '@/templates/Main';
-import React from "react";
+import { Meta } from '@/layouts/Meta';
+import { Main } from '@/templates/Main';
+import React from 'react';
 
 const Index = () => {
     return (
@@ -16,9 +16,10 @@ const Index = () => {
                 About Encode Decode
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-                This website is developed to help users and myself to quickly get the necessary tools for GIS and
-                Research related development.
-                Once the tools are stable the plan is to open source and work as a community.
+                This website is developed to help users and myself to quickly
+                get the necessary tools for GIS and Research related
+                development. Once the tools are stable the plan is to open
+                source and work as a community.
             </p>
         </Main>
     );
