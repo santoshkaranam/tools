@@ -59,12 +59,13 @@ const Main = (props: IMainProps) => {
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <button
+              <a
                 type="button"
+                href="https://www.buymeacoffee.com/karanamsantosh"
                 className="text-lg font-semibold leading-6 text-white hover:underline"
               >
-                Tools <span aria-hidden="true">&rarr;</span>
-              </button>
+                Buy Me Battery
+              </a>
             </div>
           </nav>
           <Dialog
