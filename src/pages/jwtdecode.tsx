@@ -1,7 +1,7 @@
-import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
-import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import {Meta} from '@/layouts/Meta';
+import {Main} from '@/templates/Main';
+import React, {useState} from 'react';
+import {toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const JwtDecode = () => {
@@ -28,7 +28,7 @@ const JwtDecode = () => {
 
     return (
         <Main
-            meta={<Meta title="JWT Decode" description="Decodes JWT tokens" />}
+            meta={<Meta title="JWT Decode" description="Decodes JWT tokens"/>}
         >
             <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
                 JWT Decode

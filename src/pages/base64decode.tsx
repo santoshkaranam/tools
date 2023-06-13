@@ -1,7 +1,7 @@
-import { Meta } from '@/layouts/Meta';
-import { Main } from '@/templates/Main';
-import React, { useState } from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import {Meta} from '@/layouts/Meta';
+import {Main} from '@/templates/Main';
+import React, {useState} from 'react';
+import {toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const BaseDecode = () => {
