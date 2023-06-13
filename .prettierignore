@@ -1,0 +1,11 @@
+﻿# Ignore artifacts:
+**/.github
+**/.idea
+**/.vscode
+**/__mocks__
+**/cypress
+**/out
+**/*.test.tsx
+**/*.stories.tsx
+**/*.config.js
+**/api/**/*.ts
