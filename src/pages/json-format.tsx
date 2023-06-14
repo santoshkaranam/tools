@@ -16,13 +16,13 @@ const JsonFormat = () => {
     <Main
       meta={
         <Meta
-          title="Url Decode Encode"
-          description="Decodes encodes any text to and from url format"
+          title="Format Json String"
+          description="Formats any JSON string for readability"
         />
       }
     >
       <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-        Url Encode Decode
+        Format JSON String
       </h2>
       <dd className="text-right">
         <button
