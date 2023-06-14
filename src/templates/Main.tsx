@@ -17,6 +17,7 @@ const navigation = [
   { name: 'UrlDecode', href: '/urldecode' },
   { name: 'Base64Decode', href: '/base64decode' },
   { name: 'JwtDecode', href: '/jwtdecode' },
+  { name: 'FormatJson', href: '/json-format' },
 ];
 
 const Main = (props: IMainProps) => {
