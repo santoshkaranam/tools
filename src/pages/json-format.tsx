@@ -5,9 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const JsonFormat = () => {
-  const [inputString, setValue] = useState(
-    'Input your url encoded string here and use the below buttons to encode decode'
-  );
+  const [inputString, setValue] = useState('Input unformatted string here');
   const notify = () => {
     navigator.clipboard.writeText(inputString).then();
     toast('Copied');
