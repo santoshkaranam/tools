@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 
 import CookieBanner from '@/components/cookieBanner';
 import Image from 'next/image';
+import Script from 'next/script';
 
 type IMainProps = {
   meta: ReactNode;
@@ -28,6 +29,11 @@ const Main = (props: IMainProps) => {
       {props.meta}
       <div className="bg-gray-300">
         <header className="absolute inset-x-0 top-0 z-50 backdrop-blur-md bg-black/20">
+          <Script
+            async
+            src="https://umamianalytics-kappa.vercel.app/script.js"
+            data-website-id="8f899ef9-8b83-478c-86da-27807740485b"
+          />
           <nav
             className="flex items-center justify-between p-6 lg:px-8"
             aria-label="Global"
