@@ -17,8 +17,6 @@ const JwtDecode = () => {
     try {
       const token2 = token.split('.')[1] as string;
       const base64 = atob(token2);
-      console.log(token2);
-      console.log(base64);
       return JSON.stringify(JSON.parse(base64), null, 4);
     } catch (e) {
       // @ts-ignore
@@ -28,9 +26,9 @@ const JwtDecode = () => {
 
   return (
     <Main meta={<Meta title="JWT Decode" description="Decodes JWT tokens" />}>
-      <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+      <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
         JWT Decode
-      </h2>
+      </h1>
       <dd className="text-right">
         <button
           type="button"

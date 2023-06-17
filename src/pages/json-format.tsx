@@ -19,9 +19,9 @@ const JsonFormat = () => {
         />
       }
     >
-      <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+      <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
         Format JSON String
-      </h2>
+      </h1>
       <dd className="text-right">
         <button
           type="button"
@@ -52,7 +52,7 @@ const JsonFormat = () => {
         className="w-full h-80 p-2 text-sm"
       />
       <div className="grid grid-cols-2">
-        <dd className="mt-1 p-2 text-right ">
+        <dd className="mt-1 p-2 text-left ">
           <button
             type="button"
             onClick={() => {

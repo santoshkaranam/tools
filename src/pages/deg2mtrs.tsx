@@ -4,26 +4,35 @@ import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const UrlDecode = () => {
+const Deg2Mtrs = () => {
   const [inputString, setValue] = useState(
-    'Input your url encoded string here and use the below buttons to encode decode'
+    'Input your JWT string to decode here'
   );
   const notify = () => {
     navigator.clipboard.writeText(inputString).then();
     toast('Copied');
   };
+
+  function parseJwt(token: string) {
+    try {
+      const token2 = token.split('.')[1] as string;
+      const base64 = atob(token2);
+      return JSON.stringify(JSON.parse(base64), null, 4);
+    } catch (e) {
+      // @ts-ignore
+      return e.toString();
+    }
+  }
+
   return (
-    <Main
-      meta={
-        <Meta
-          title="Url Decode Encode"
-          description="Decodes encodes any text to and from url format"
-        />
-      }
-    >
+    <Main meta={<Meta title="JWT Decode" description="Decodes JWT tokens" />}>
       <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-        Url Encode Decode
+        JWT Decode
       </h1>
+      <p>
+        each degree the radius line of the Earth sweeps out corresponds to
+        111,139 meters
+      </p>
       <dd className="text-right">
         <button
           type="button"
@@ -51,29 +60,18 @@ const UrlDecode = () => {
         onChange={(e) => {
           setValue(e.target.value);
         }}
-        className="w-full h-80 p-2"
+        className="w-full h-80 p-2 text-sm"
       />
       <div className="grid grid-cols-2">
-        <dd className="mt-1  p-2 text-left ">
+        <dd className="mt-1 p-2 text-left ">
           <button
             type="button"
             onClick={() => {
-              setValue(encodeURIComponent(inputString));
+              setValue(parseJwt(inputString).toString());
             }}
             className="rounded-md bg-black px-3.5 py-2.5 text-lg font-semibold text-gray-500 shadow-sm hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            Encode
-          </button>
-        </dd>
-        <dd className="mt-1  p-2 text-right ">
-          <button
-            type="button"
-            onClick={() => {
-              setValue(decodeURIComponent(inputString));
-            }}
-            className="rounded-md bg-black px-3.5 py-2.5 text-lg font-semibold text-gray-500 shadow-sm hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
-            Decode
+            Convert
           </button>
         </dd>
       </div>
@@ -81,4 +79,4 @@ const UrlDecode = () => {
   );
 };
 
-export default UrlDecode;
+export default Deg2Mtrs;

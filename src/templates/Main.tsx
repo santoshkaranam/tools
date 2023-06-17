@@ -7,19 +7,13 @@ import React, { useState } from 'react';
 import CookieBanner from '@/components/cookieBanner';
 import Image from 'next/image';
 import Script from 'next/script';
+import { MyFooter } from '@/templates/MyFooter';
+import { navigation } from '@/utils/Helpers';
 
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
 };
-
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'UrlDecode', href: '/urldecode' },
-  { name: 'Base64Decode', href: '/base64decode' },
-  { name: 'JwtDecode', href: '/jwtdecode' },
-  { name: 'FormatJson', href: '/json-format' },
-];
 
 const Main = (props: IMainProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -124,7 +118,7 @@ const Main = (props: IMainProps) => {
           </Dialog>
         </header>
 
-        <main className="content  text-xl  ">
+        <main className="content min-h-screen text-xl  ">
           <div className="h-auto bg-gray-900">
             <div className="relative isolate h-auto ">
               <Image
@@ -135,7 +129,7 @@ const Main = (props: IMainProps) => {
                 alt=""
                 className="absolute inset-0 -z-10 h-screen w-full object-cover"
               />
-              <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56  ">
+              <div className="mx-auto max-w-4xl pt-32 sm:pt-48 lg:pt-56  ">
                 <div className="bg-black/20 p-4 pb-8 text-center backdrop-blur-sm">
                   {props.children}
                 </div>
@@ -144,14 +138,7 @@ const Main = (props: IMainProps) => {
           </div>
         </main>
 
-        <footer className="border-t border-gray-300 py-8 text-center text-sm">
-          © Copyright {new Date().getFullYear()} <br />
-          This work is licensed under a{' '}
-          <a rel="license" href="https://opensource.org/license/mit/">
-            {' '}
-            MIT license
-          </a>
-        </footer>
+        {MyFooter(navigation)}
         <CookieBanner />
       </div>
     </div>

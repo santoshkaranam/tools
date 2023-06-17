@@ -21,9 +21,9 @@ const BaseDecode = () => {
         />
       }
     >
-      <h2 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+      <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
         Base64 Encode Decode
-      </h2>
+      </h1>
       <dd className="text-right">
         <button
           type="button"
