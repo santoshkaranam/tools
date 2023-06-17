@@ -10,12 +10,12 @@ export function MyFooter(navigation: { name: string; href: string }[]) {
       <div className="lg:py-16 md:px-12 lg:px-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="xl:col-span-1">
-            <a
+            <Link
               href="/"
               className="text-lg font-bold tracking-tighter transition duration-500 ease-in-out transform text-black tracking-relaxed lg:pr-8"
             >
               <img src="/2.png" height={40} width={40} alt="" />
-            </a>
+            </Link>
             <p className="w-1/2 mt-2 text-sm text-gray-500">Decode Tools</p>
           </div>
           <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
@@ -24,9 +24,9 @@ export function MyFooter(navigation: { name: string; href: string }[]) {
                 <h3 className="font-semibold leading-6 uppercase text-black">
                   Tools
                 </h3>
-                <ul role="list" className="mt-4 space-y-3">
+                <ul className="mt-4 space-y-3">
                   {navigation.map((item) => (
-                    <li>
+                    <li key={item.name}>
                       <Link
                         key={item.name}
                         href={item.href}
@@ -42,10 +42,10 @@ export function MyFooter(navigation: { name: string; href: string }[]) {
                 <h3 className="font-semibold leading-6 uppercase text-black">
                   Support
                 </h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul className="mt-4 space-y-4">
                   <li>
                     <a
-                      href="#"
+                      href="https://www.buymeacoffee.com/karanamsantosh"
                       className="text-sm text-gray-500 hover:text-blue-600"
                     >
                       Buy me Battery
