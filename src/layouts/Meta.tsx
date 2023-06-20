@@ -22,6 +22,9 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
+		<meta name="description" content={props.description} />
+		<meta name="keywords" content="Online Decode Encode Base64 Json Formatting JWT" />
+		<meta name="author" content="Santosh Karanam" />
         <link
           rel="apple-touch-icon"
           href={`${router.basePath}/apple-touch-icon.png`}
