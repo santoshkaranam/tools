@@ -25,6 +25,11 @@ const Main = (props: IMainProps) => {
         <header className="absolute inset-x-0 top-0 z-50 backdrop-blur-md bg-black/20">
           <Script
             async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1482811726476217"
+            crossOrigin="anonymous"
+          ></Script>
+          <Script
+            async
             src="https://umamianalytics-kappa.vercel.app/script.js"
             data-website-id="8f899ef9-8b83-478c-86da-27807740485b"
           />
