@@ -27,7 +27,7 @@ const Main = (props: IMainProps) => {
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1482811726476217"
             crossOrigin="anonymous"
-          ></Script>
+          />
           <Script
             async
             src="https://umamianalytics-kappa.vercel.app/script.js"
