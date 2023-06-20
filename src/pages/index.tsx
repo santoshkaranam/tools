@@ -73,7 +73,7 @@ const Index = () => {
         three parts: the header, the payload, and the signature. Our tool
         specifically focuses on decoding and extracting the contents of the
         header and payload. By decoding JWTs, you gain valuable insights into
-        the token's contents, which can be useful for debugging,
+        the token&lsquo;s contents, which can be useful for debugging,
         troubleshooting, or simply understanding the data being transmitted. You
         may uncover details such as the token issuer, expiration time, user
         roles, or any custom claims embedded within the payload.
