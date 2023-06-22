@@ -40,7 +40,7 @@ const Index = () => {
       </section>
 
       <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-        Welcome to Online Decode/Encode Tools!
+        Online Decode Encode Tools
       </h1>
       <p className="mt-6 text-lg leading-8 text-gray-300">
         I am thrilled to offer you a comprehensive set of decoding and encoding

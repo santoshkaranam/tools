@@ -40,7 +40,11 @@ const Main = (props: IMainProps) => {
             <div className="flex lg:flex-1">
               <button type="button" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img className="h-12 w-auto" src="/2.png" alt="" />
+                <img
+                  className="h-12 w-auto"
+                  src="https://raw.githubusercontent.com/santoshkaranam/tools/main/public/2.png"
+                  alt=""
+                />
               </button>
             </div>
             <div className="flex lg:hidden">
@@ -85,7 +89,11 @@ const Main = (props: IMainProps) => {
               <div className="flex items-center justify-between">
                 <div className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
-                  <img className="h-8 w-auto" src="/2.png" alt="" />
+                  <img
+                    className="h-8 w-auto"
+                    src="https://raw.githubusercontent.com/santoshkaranam/tools/main/public/2.png"
+                    alt=""
+                  />
                 </div>
                 <button
                   type="button"
@@ -129,7 +137,7 @@ const Main = (props: IMainProps) => {
               <Image
                 width="2592"
                 height="1728"
-                src="/1.jpg"
+                src="https://github.com/santoshkaranam/tools/blob/main/public/1.jpg?raw=true"
                 loading="lazy"
                 alt=""
                 className="absolute inset-0 -z-10 h-screen w-full object-cover"

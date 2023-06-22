@@ -14,7 +14,12 @@ export function MyFooter(navigation: { name: string; href: string }[]) {
               href="/"
               className="text-lg font-bold tracking-tighter transition duration-500 ease-in-out transform text-black tracking-relaxed lg:pr-8"
             >
-              <img src="/2.png" height={40} width={40} alt="" />
+              <img
+                src="https://raw.githubusercontent.com/santoshkaranam/tools/main/public/2.png"
+                height={40}
+                width={40}
+                alt=""
+              />
             </Link>
             <p className="w-1/2 mt-2 text-sm text-gray-500">Decode Tools</p>
           </div>
