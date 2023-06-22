@@ -14,13 +14,13 @@ const JsonFormat = () => {
     <Main
       meta={
         <Meta
-          title="Format Json String"
-          description="Formats any JSON string for readability"
+          title="Online Format Json String"
+          description="Formats online any JSON string for readability"
         />
       }
     >
       <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-        Format JSON String
+        Online Format JSON String
       </h1>
       <dd className="text-right">
         <button
@@ -63,6 +63,56 @@ const JsonFormat = () => {
             Format
           </button>
         </dd>
+      </div>
+      <div className="text-white text-left">
+        <p>
+          1. `JSON.parse()`: The `JSON.parse()` function is used to parse a JSON
+          string and convert it into a JavaScript object or value.
+        </p>
+        <p>
+          2. `JSON.stringify()`: The `JSON.stringify()` function is used to
+          convert a JavaScript object or value into a JSON string. When combined
+          with the `null` and `4` arguments, it formats the JSON string with
+          indentation for improved readability.
+        </p>
+
+        <p>
+          By combining `JSON.stringify(JSON.parse(inputString), null, 4)`, you
+          can take a JSON string, parse it into a JavaScript object using
+          `JSON.parse()`, and then convert it back to a formatted JSON string
+          using `JSON.stringify()`.
+        </p>
+
+        <p>
+          This combination is useful when you want to format a JSON string with
+          proper indentation for better readability.
+        </p>
+
+        <p>
+          For more information on `JSON.stringify()` and `JSON.parse()`, you can
+          refer to the Mozilla Developer Network (MDN) documentation:
+        </p>
+
+        <ul>
+          <li>
+            <a
+              className="underline underline-offset-1"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
+              target="_new"
+            >
+              MDN Web Docs: JSON.stringify()
+            </a>
+          </li>
+          <li>
+            <a
+              className="underline underline-offset-1"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+              target="_new"
+            >
+              MDN Web Docs: JSON.parse()
+            </a>
+          </li>
+        </ul>
       </div>
     </Main>
   );

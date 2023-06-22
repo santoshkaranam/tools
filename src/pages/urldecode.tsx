@@ -16,13 +16,13 @@ const UrlDecode = () => {
     <Main
       meta={
         <Meta
-          title="Url Decode Encode"
-          description="Decodes encodes any text to and from url format"
+          title="Online Url Decode Encode"
+          description="Decodes encodes any text online to and from url format"
         />
       }
     >
       <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-        Url Encode Decode
+        Online Url Encode Decode
       </h1>
       <dd className="text-right">
         <button
@@ -76,6 +76,51 @@ const UrlDecode = () => {
             Decode
           </button>
         </dd>
+      </div>
+      <div className="text-white text-left">
+        <p>
+          The `decodeURIComponent()` function is a built-in JavaScript function
+          that is used to decode a Uniform Resource Identifier (URI) component
+          that has been previously encoded with the `encodeURIComponent()`
+          function. It reverses the encoding process and converts any escape
+          sequences back to their original characters.
+        </p>
+
+        <p>Here is an example usage of `decodeURIComponent()`:</p>
+
+        <p>
+          ---javascript
+          <br />
+          <code>
+            const encodedURI =
+            &#39;https%3A%2F%2Fwww.example.com%2Fpath%2Fpage%3Fparam%3Dvalue&#39;;
+            <br />
+            const decodedURI = decodeURIComponent(encodedURI);
+            <br />
+            console.log(decodedURI);
+          </code>
+        </p>
+
+        <p>
+          Output:
+          <br />
+          <br />
+          https://www.example.com/path/page?param=value
+          <br />
+        </p>
+
+        <p>
+          For more information, you can refer to the Mozilla Developer Network
+          (MDN) documentation on{' '}
+          <a
+            className="underline underline-offset-1"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent"
+          >
+            decodeURIComponent()
+          </a>
+        </p>
+
+        <p>&nbsp;</p>
       </div>
     </Main>
   );

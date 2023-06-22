@@ -25,9 +25,16 @@ const JwtDecode = () => {
   }
 
   return (
-    <Main meta={<Meta title="JWT Decode" description="Decodes JWT tokens" />}>
+    <Main
+      meta={
+        <Meta
+          title="Online JWT Decode"
+          description="Online Decodes JWT tokens"
+        />
+      }
+    >
       <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-        JWT Decode
+        Online JWT Decode
       </h1>
       <dd className="text-right">
         <button
@@ -70,6 +77,24 @@ const JwtDecode = () => {
             Decode
           </button>
         </dd>
+      </div>
+      <div className="text-white text-left">
+        <p>
+          JWT stands for JSON Web Token. It is an open standard (RFC 7519) for
+          securely transmitting information between parties as a JSON object.
+          JWTs are commonly used for authentication and authorization in web
+          applications and APIs.
+        </p>
+        <p>
+          JWTs are self-contained and portable, allowing them to be transmitted
+          and verified across different systems or domains. They eliminate the
+          need for server-side session storage and enable stateless
+          authentication.
+        </p>
+        <p>
+          This online tool only decodes and displays payload information of the
+          JWT tokens.
+        </p>
       </div>
     </Main>
   );
