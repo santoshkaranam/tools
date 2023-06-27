@@ -8,4 +8,5 @@ export const navigation = [
   { name: 'Base64Decode', href: '/base64decode' },
   { name: 'JwtDecode', href: '/jwtdecode' },
   { name: 'FormatJson', href: '/json-format' },
+  { name: 'EpochDecode', href: '/epocdecode' },
 ];
