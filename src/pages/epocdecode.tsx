@@ -69,7 +69,9 @@ const EpocDecode = () => {
           <button
             type="button"
             onClick={() => {
-              setValue(new Date(parseInt(inputString) * 1000).toISOString());
+              setValue(
+                new Date(parseInt(inputString, 10) * 1000).toISOString()
+              );
             }}
             className="rounded-md bg-black px-3.5 py-2.5 text-lg font-semibold text-gray-500 shadow-sm hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
@@ -83,7 +85,7 @@ const EpocDecode = () => {
           number of seconds that have elapsed since January 1, 1970 (midnight
           UTC/GMT), not counting leap seconds (in ISO 8601:
           1970-01-01T00:00:00Z). Literally speaking the epoch is Unix time 0
-          (midnight 1/1/1970), but 'epoch' is often used as a synonym for Unix
+          (midnight 1/1/1970), but epoch is often used as a synonym for Unix
           time. Some systems store epoch dates as a signed 32-bit integer, which
           might cause problems on January 19, 2038 (known as the Year 2038
           problem or Y2038). The converter on this page converts timestamps in
