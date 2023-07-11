@@ -152,20 +152,20 @@ const Main = (props: IMainProps) => {
                 </div>
               </div> */}
               <div className="pt-32 sm:pt-48 lg:pt-56 grid grid-cols-5">
-                <div className="text-left">
+                <div className="text-left w-full h-full">
                   <GoogleAdd unitId="9008056788" />
                 </div>
                 <div className="bg-black/20 p-4 pb-8 text-center backdrop-blur-sm col-span-3">
                   {props.children}
                 </div>
-                <div className="text-right">
+                <div className="text-right w-full h-full pr-2">
                   <GoogleAdd unitId="6242292643" />
                 </div>
               </div>
             </div>
           </div>
         </main>
-        <div className="h-auto">
+        <div className="h-auto w-full ">
           <GoogleAdd unitId="9989965966" />
         </div>
         {MyFooter(navigation)}
