@@ -1,6 +1,9 @@
 ﻿import { useEffect, useState } from 'react';
 
-export default function GoogleAdd() {
+interface IData {
+  unitId: string;
+}
+export default function GoogleAdd(props: IData) {
   const [hydrated, setHydrated] = useState(false);
   useEffect(() => {
     setHydrated(true);
@@ -16,7 +19,7 @@ export default function GoogleAdd() {
         className="adsbygoogle"
         style={{ display: 'block' }}
         data-ad-client="ca-pub-1482811726476217"
-        data-ad-slot="776****95"
+        data-ad-slot={props.unitId}
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
