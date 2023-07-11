@@ -25,7 +25,9 @@ const Deg2Mtrs = () => {
   }
 
   return (
-    <Main meta={<Meta title="JWT Decode" description="Decodes JWT tokens" />}>
+    <Main
+      meta={<Meta title="Free JWT Decode" description="Decodes JWT tokens" />}
+    >
       <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
         JWT Decode
       </h1>

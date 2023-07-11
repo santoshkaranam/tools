@@ -28,8 +28,8 @@ const JwtDecode = () => {
     <Main
       meta={
         <Meta
-          title="Online JWT Decode"
-          description="Online Decodes JWT tokens"
+          title="Free Online JWT Decode"
+          description="Free Online Decode JWT tokens"
         />
       }
     >

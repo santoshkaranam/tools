@@ -14,7 +14,7 @@ const JsonFormat = () => {
     <Main
       meta={
         <Meta
-          title="Online Format Json String"
+          title="Free Online Format Json String"
           description="Formats online any JSON string for readability"
         />
       }

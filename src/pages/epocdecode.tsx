@@ -16,7 +16,7 @@ const EpocDecode = () => {
     <Main
       meta={
         <Meta
-          title="Online Unix epoch time Decode Encode"
+          title="Free Online Unix epoch time Decode Encode"
           description="Decodes encodes any text online to and from Unix epoch time format"
         />
       }

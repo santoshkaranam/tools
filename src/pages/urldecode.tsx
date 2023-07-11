@@ -16,8 +16,8 @@ const UrlDecode = () => {
     <Main
       meta={
         <Meta
-          title="Online Url Decode Encode"
-          description="Decodes encodes any text online to and from url format"
+          title="Free Online Url Decode Encode"
+          description="Decodes encodes any text online to and from url format for free"
         />
       }
     >

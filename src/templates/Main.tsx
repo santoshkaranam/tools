@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { MyFooter } from '@/templates/MyFooter';
 import { navigation } from '@/utils/Helpers';
+import GoogleAdd from '@/components/googleAdd';
 
 type IMainProps = {
   meta: ReactNode;
@@ -24,9 +25,12 @@ const Main = (props: IMainProps) => {
       <div className="bg-gray-300">
         <header className="absolute inset-x-0 top-0 z-50 backdrop-blur-md bg-black/20">
           <Script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1482811726476217"
+            id="Adsense-id"
+            data-ad-client="ca-pub-1482811726476217"
             crossOrigin="anonymous"
+            async
+            strategy="beforeInteractive"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           />
           <Script
             async
@@ -142,15 +146,28 @@ const Main = (props: IMainProps) => {
                 alt=""
                 className="absolute inset-0 -z-10 h-screen w-full object-cover"
               />
-              <div className="mx-auto max-w-4xl pt-32 sm:pt-48 lg:pt-56  ">
+              {/* <div className="mx-auto max-w-4xl pt-32 sm:pt-48 lg:pt-56  ">
                 <div className="bg-black/20 p-4 pb-8 text-center backdrop-blur-sm">
                   {props.children}
+                </div>
+              </div> */}
+              <div className="pt-32 sm:pt-48 lg:pt-56 grid grid-cols-5">
+                <div className="text-left">
+                  <GoogleAdd />
+                </div>
+                <div className="bg-black/20 p-4 pb-8 text-center backdrop-blur-sm col-span-3">
+                  {props.children}
+                </div>
+                <div className="text-right">
+                  <GoogleAdd />
                 </div>
               </div>
             </div>
           </div>
         </main>
-
+        <div className="h-auto">
+          <GoogleAdd />
+        </div>
         {MyFooter(navigation)}
         <CookieBanner />
       </div>

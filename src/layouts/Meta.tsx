@@ -25,7 +25,7 @@ const Meta = (props: IMetaProps) => {
         <meta name="description" content={props.description} />
         <meta
           name="keywords"
-          content="Online Decode Encode Base64 Json Formatting JWT"
+          content="Free free Online online Decode decode Encode encode tools tool software text decoding encoding json jwt epoc url degree to meters QR code"
         />
         <meta name="author" content="Santosh Karanam" />
         <link

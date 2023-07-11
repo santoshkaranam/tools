@@ -9,8 +9,8 @@ const Index = () => {
     <Main
       meta={
         <Meta
-          title="Online Decode Encode Tools"
-          description="Tools to support different types of decode and encode online"
+          title="Free Online Decode Encode Tools"
+          description="Free Tools to support different types of decode and encode online"
         />
       }
     >

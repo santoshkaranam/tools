@@ -16,8 +16,8 @@ const BaseDecode = () => {
     <Main
       meta={
         <Meta
-          title="Online Base64 Decode Encode"
-          description="Decodes encodes online any text to and from base64 format"
+          title="Free Online Base64 Decode Encode"
+          description="Decodes encodes online any text to and from base64 format for free"
         />
       }
     >
