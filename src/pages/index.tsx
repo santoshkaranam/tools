@@ -3,6 +3,7 @@ import { Main } from '@/templates/Main';
 import React from 'react';
 import { navigation } from '@/utils/Helpers';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Index = () => {
   return (
@@ -98,9 +99,11 @@ const Index = () => {
       <section>
         <div className="items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl">
           <div className="space-y-4 p-8 lg:p-24 ">
-            <div className="aspect-[3/2]">
-              <img
-                className="object-cover w-full h-full"
+            <div className=" h-auto">
+              <Image
+                width={20}
+                height={20}
+                className="object-cover w-20 h-20"
                 src="https://pbs.twimg.com/profile_images/1670041099245862913/onKTxZwp_400x400.jpg"
                 alt=""
               />
