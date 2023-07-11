@@ -11,8 +11,8 @@ export default function GoogleAdd() {
   }
   return (
     <>
-      <div className="col-md-8">
-        <h3 className="pb-4 mb-4 fst-italic border-bottom"> Adsense ads </h3>
+      <div>
+        <h3 className="pb-4 mb-4 "> Adsense ads </h3>
         <ins
           className="adsbygoogle"
           style={{ display: 'block' }}
@@ -20,7 +20,7 @@ export default function GoogleAdd() {
           data-ad-slot="776****95"
           data-ad-format="auto"
           data-full-width-responsive="true"
-        ></ins>
+        />
         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
     </>
