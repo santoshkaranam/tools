@@ -25,6 +25,15 @@ const JsonFormat = () => {
       <dd className="text-right">
         <button
           type="button"
+          onClick={() => {
+            setValue('');
+          }}
+          className="text-white  rounded-md border border-gray-200 hover:border-black text-sm p-2 mb-1 mr-2"
+        >
+          clear
+        </button>
+        <button
+          type="button"
           onClick={notify}
           className="text-white  rounded-md border border-gray-200 hover:border-black text-sm p-2 mb-1"
         >
