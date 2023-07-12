@@ -25,7 +25,7 @@ const Meta = (props: IMetaProps) => {
         <meta name="description" content={props.description} />
         <meta
           name="keywords"
-          content="Free free Online online Decode decode Encode encode tools tool software text decoding encoding json jwt epoc url degree to meters QR code"
+          content="Free, free Online, online Decode, online decode, online Encode, online encode tools, tool, software, free online text decoding, free online text encoding, json, jwt, epoc, url, degree to meters, QR code"
         />
         <meta name="author" content="Santosh Karanam" />
         <link
@@ -57,6 +57,10 @@ const Meta = (props: IMetaProps) => {
         title={props.title}
         description={props.description}
         canonical={props.canonical}
+        twitter={{
+          handle: '@detools42',
+          site: 'https://decodetools.online/',
+        }}
         openGraph={{
           title: props.title,
           description: props.description,
