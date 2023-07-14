@@ -22,7 +22,7 @@ const Deg2Mtrs = () => {
       return;
     }
     const mtrs = 111139 * degValue;
-    setValue(mtrs.toString() + ' meters');
+    setValue(`${mtrs.toString()} meters`);
   }
 
   return (
