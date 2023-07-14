@@ -73,10 +73,21 @@ const Main = (props: IMainProps) => {
               ))}
             </div>
             <div className="hidden xl:flex lg:flex-1 lg:justify-end">
+              <div className="px-4 text-center">
+                <a
+                  href="https://www.producthunt.com/posts/decode-tools?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-decode&#0045;tools"
+                  target="_blank"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=404685&theme=dark"
+                    alt="Decode&#0032;Tools - Daily&#0032;decode&#0032;tools&#0032;for&#0032;devs | Product Hunt"
+                  />
+                </a>
+              </div>
               <a
                 type="button"
                 href="https://www.buymeacoffee.com/karanamsantosh"
-                className="text-lg font-semibold leading-6 text-white hover:underline"
+                className=" text-center text-lg font-semibold leading-6 text-white hover:underline"
               >
                 Buy Me Battery
               </a>
