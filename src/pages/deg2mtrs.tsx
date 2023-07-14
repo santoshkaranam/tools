@@ -14,14 +14,11 @@ const Deg2Mtrs = () => {
   };
 
   function deg2mtrs(degValueString: string) {
-    // check if input is undefined
     if (degValueString === undefined) {
       return;
     }
-    // convert deg to meters
     const degValue = Number(degValueString);
-    //check if degValue is undefined
-    if (degValue === undefined || isNaN(degValue)) {
+    if (degValue === undefined || Number.isNaN(degValue)) {
       return;
     }
     const mtrs = 111139 * degValue;
