@@ -6,35 +6,55 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Deg2Mtrs = () => {
   const [inputString, setValue] = useState(
-    'Input your JWT string to decode here'
+    'Input degree lat or degree long here'
   );
   const notify = () => {
     navigator.clipboard.writeText(inputString).then();
     toast('Copied');
   };
 
-  function parseJwt(token: string) {
-    try {
-      const token2 = token.split('.')[1] as string;
-      const base64 = atob(token2);
-      return JSON.stringify(JSON.parse(base64), null, 4);
-    } catch (e) {
-      // @ts-ignore
-      return e.toString();
+  function deg2mtrs(degValueString: string) {
+    // check if input is undefined
+    if (degValueString === undefined) {
+      return;
     }
+    // convert deg to meters
+    const degValue = Number(degValueString);
+    //check if degValue is undefined
+    if (degValue === undefined || isNaN(degValue)) {
+      return;
+    }
+    const mtrs = 111139 * degValue;
+    setValue(mtrs.toString() + ' meters');
   }
 
   return (
     <Main
-      meta={<Meta title="Free JWT Decode" description="Decodes JWT tokens" />}
+      meta={
+        <Meta
+          title="Free Earth Degree to Meters"
+          description="Decodes Earth Degree to Meters"
+        />
+      }
     >
       <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
-        JWT Decode
+        Earth Degree to Meters
       </h1>
-      <p>
-        each degree the radius line of the Earth sweeps out corresponds to
-        111,139 meters
+      <p className="text-white">
+        For Each degree the radius line of the Earth sweeps out 111139 meters.
+        This is true for small values. Near the poles this calculations doesnot
+        hold good. This tool assumes small values of degree and earth as flat
+        for calculation purposes.
       </p>
+      <div className="grid grid-cols-1 text-white">
+        <dt className="text-left ">Degree to Meters</dt>
+        <dt className="text-left ">1 = 111139 meters</dt>
+        <dt className="text-left ">0.01 = 1111.39 meters</dt>
+        <dt className="text-left ">0.001 = 111.139 meters</dt>
+        <dt className="text-left ">0.00225 = 250.06275 meters</dt>
+        <dt className="text-left ">0.0045 = 500.1255 meters</dt>
+      </div>
+
       <dd className="text-right">
         <button
           type="button"
@@ -78,7 +98,7 @@ const Deg2Mtrs = () => {
           <button
             type="button"
             onClick={() => {
-              setValue(parseJwt(inputString).toString());
+              deg2mtrs(inputString);
             }}
             className="rounded-md bg-black px-3.5 py-2.5 text-lg font-semibold text-gray-500 shadow-sm hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >

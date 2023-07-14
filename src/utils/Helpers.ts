@@ -9,4 +9,5 @@ export const navigation = [
   { name: 'JwtDecode', href: '/jwtdecode' },
   { name: 'FormatJson', href: '/json-format' },
   { name: 'EpochDecode', href: '/epocdecode' },
+  { name: 'Deg2Mtrs', href: '/deg2mtrs' },
 ];

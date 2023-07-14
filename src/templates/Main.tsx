@@ -61,7 +61,7 @@ const Main = (props: IMainProps) => {
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
-            <div className="hidden lg:flex lg:gap-x-12">
+            <div className="hidden xl:flex lg:gap-x-12">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -72,7 +72,7 @@ const Main = (props: IMainProps) => {
                 </Link>
               ))}
             </div>
-            <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div className="hidden xl:flex lg:flex-1 lg:justify-end">
               <a
                 type="button"
                 href="https://www.buymeacoffee.com/karanamsantosh"
@@ -84,7 +84,7 @@ const Main = (props: IMainProps) => {
           </nav>
           <Dialog
             as="div"
-            className="lg:hidden"
+            className="xl:hidden"
             open={mobileMenuOpen}
             onClose={setMobileMenuOpen}
           >
@@ -122,12 +122,13 @@ const Main = (props: IMainProps) => {
                     ))}
                   </div>
                   <div className="py-6">
-                    <button
+                    <a
                       type="button"
-                      className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                      href="https://www.buymeacoffee.com/karanamsantosh"
+                      className="text-lg font-semibold leading-6 text-white hover:underline"
                     >
-                      Log in
-                    </button>
+                      Buy Me Battery
+                    </a>
                   </div>
                 </div>
               </div>
