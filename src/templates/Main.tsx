@@ -34,8 +34,8 @@ const Main = (props: IMainProps) => {
           />
           <Script
             async
-            src="https://umamianalytics-kappa.vercel.app/script.js"
-            data-website-id="8f899ef9-8b83-478c-86da-27807740485b"
+            src="https://umami-tau-peach.vercel.app/script.js"
+            data-website-id="32890a18-644f-4b81-8dde-9876f57f5aef"
           />
           <nav
             className="flex items-center justify-between p-6 lg:px-8"
