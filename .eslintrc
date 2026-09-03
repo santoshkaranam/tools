@@ -44,7 +44,7 @@
           "error",
           {
             "singleQuote": true,
-            "endOfLine": "auto"
+            "endOfLine": "auto",
           }
         ],
         "jsx-a11y/label-has-associated-control": [
@@ -53,7 +53,7 @@
             "required": {
               "some": [
                 "nesting",
-                "id"
+                "id",
               ]
             }
           }
@@ -64,7 +64,7 @@
             "required": {
               "some": [
                 "nesting",
-                "id"
+                "id",
               ]
             }
           }
@@ -89,7 +89,7 @@
           "error",
           "ForInStatement",
           "LabeledStatement",
-          "WithStatement"
+          "WithStatement",
         ],
         // Overrides Airbnb configuration and enable no-restricted-syntax
         "import/prefer-default-export": "off",
@@ -112,19 +112,19 @@
     {
       "files": [
         "**/*.test.ts",
-        "**/*.test.tsx"
+        "**/*.test.tsx",
       ],
       "plugins": [
         "jest",
         "jest-formatting",
         "testing-library",
-        "jest-dom"
+        "jest-dom",
       ],
       "extends": [
         "plugin:jest/recommended",
         "plugin:jest-formatting/recommended",
         "plugin:testing-library/react",
-        "plugin:jest-dom/recommended"
+        "plugin:jest-dom/recommended",
       ]
     },
     // Configuration for e2e testing (Cypress)
